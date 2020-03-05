@@ -6,11 +6,11 @@ package:
 
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: fbb74957419b32f05d7ebf87db1425f59e950b89883f2ff2ecb490cd63ff8ad8
+  sha256: 2772ae0dc228cebaf1891623526a097799ab7fe212c606f6d2fe6c3c47b70be6
 
 
 build:
-  number: 1
+  number: 2
   skip: True                                # [py2k]
 
 
