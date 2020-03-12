@@ -1,21 +1,31 @@
 boost_cpp:
 - '1.72'
 c_compiler:
-- vs2015
+- gcc
+c_compiler_version:
+- '7'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2015
+- gxx
+cxx_compiler_version:
+- '7'
+docker_image:
+- condaforge/linux-anvil-comp7
 libgdal:
 - '3.0'
+ncurses:
+- '6.1'
 numpy:
 - '1.14'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
   libgdal:
+    max_pin: x.x
+  ncurses:
     max_pin: x.x
   python:
     min_pin: x.x
@@ -25,12 +35,8 @@ pin_run_as_build:
   xerces-c:
     max_pin: x.x.x
 python:
-- '3.8'
+- 3.7.* *_cpython
 qt:
 - '5.12'
 xerces_c:
 - 3.2.2
-zip_keys:
-- - python
-  - c_compiler
-  - cxx_compiler
