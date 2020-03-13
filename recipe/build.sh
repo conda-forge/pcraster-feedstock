@@ -21,6 +21,10 @@ mkdir -p build && cd build
 cmake .. -G"Ninja" -DCMAKE_BUILD_TYPE=Release \
   -D CMAKE_INSTALL_PREFIX="${PREFIX}" \
   -D Python3_FIND_STRATEGY="LOCATION" \
+  -D Python3_EXECUTABLE="${PYTHON}" \
+  -D PYTHON_EXECUTABLE="${PYTHON}" \
+  -D Python_ROOT_DIR="${PREFIX}/bin" \
+  -D Python3_ROOT_DIR="${PREFIX}/bin" \
   -D PCRASTER_WITH_FLAGS_NATIVE=OFF \
   -D PCRASTER_PYTHON_INSTALL_DIR=${SP_DIR} \
   $PLATFORM_OPTIONS
