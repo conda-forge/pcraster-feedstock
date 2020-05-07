@@ -1,13 +1,13 @@
 boost_cpp:
 - '1.72'
 c_compiler:
-- vs2015
+- vs2017
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2015
+- vs2017
 libgdal:
 - '3.0'
 numpy:
@@ -30,7 +30,3 @@ qt:
 - '5.12'
 xerces_c:
 - 3.2.2
-zip_keys:
-- - python
-  - c_compiler
-  - cxx_compiler
