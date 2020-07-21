@@ -5,7 +5,7 @@ Home: http://www.pcraster.eu
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Environmental modelling software.
 
