@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 6
+  number: 7
   skip: True                                # [py2k]
 
 
