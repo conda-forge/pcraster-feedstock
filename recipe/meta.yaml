@@ -1,4 +1,4 @@
-{% set version = "4.3.0" %}
+{% set version = "4.3.1" %}
 
 package:
   name: pcraster
@@ -6,22 +6,22 @@ package:
 
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: fa9c3143681a0ab12c90ae39607a1c92a0fd2628109b3a7749fe92c90f8173ec
+  sha256: a4baf2085a80405744d3a3489dfa0d5433eb8b9ec64c4a58f6bd6ada174c03ed
 
 
 build:
-  number: 7
-  skip: True                                # [py2k]
+  number: 0
+  skip: true  # [py2k]
 
 
   missing_dso_whitelist:
-    - C:/Windows/System32/MSVCP140.dll      # [win]
-    - C:/Windows/System32/VCRUNTIME140.dll  # [win]
-    - C:/Windows/System32/imagehlp.dll      # [win]
-    - C:/Windows/System32/GLU32.dll         # [win]
-    - C:/Windows/System32/OPENGL32.dll      # [win]
-    - C:/Windows/System32/dwmapi.dll        # [win]
-    - C:/Windows/System32/WTSAPI32.dll      # [win]
+    - C: /Windows/System32/MSVCP140.dll  # [win]
+    - C: /Windows/System32/VCRUNTIME140.dll  # [win]
+    - C: /Windows/System32/imagehlp.dll  # [win]
+    - C: /Windows/System32/GLU32.dll  # [win]
+    - C: /Windows/System32/OPENGL32.dll  # [win]
+    - C: /Windows/System32/dwmapi.dll  # [win]
+    - C: /Windows/System32/WTSAPI32.dll  # [win]
     - Library/bin/MSVCP140.dll              # [win]
     - Library/bin/VCRUNTIME140.dll          # [win]
 
@@ -62,25 +62,25 @@ requirements:
 
 
 test:
-    imports:
-       - pcraster
-    commands:
-        - asc2map
-        - col2map
-        - legend
-        - map2asc
-        - map2col
-        - mapattr
-        - oldcalc
-        - pcrcalc
-        - resample
-        - table
+  imports:
+    - pcraster
+  commands:
+    - asc2map
+    - col2map
+    - legend
+    - map2asc
+    - map2col
+    - mapattr
+    - oldcalc
+    - pcrcalc
+    - resample
+    - table
 
 about:
   home: https://www.pcraster.eu
   license: GPL-3.0-only
   license_file: LICENSE
-  summary: 'Environmental modelling software.'
+  summary: Environmental modelling software.
   description: |
     PCRaster is a collection of tools and software libraries tailored to the
     construction of spatio-temporal environmental models. Application domains
