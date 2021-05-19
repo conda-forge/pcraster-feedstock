@@ -4,26 +4,15 @@ package:
   name: pcraster
   version: {{ version }}
 
+
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: a4baf2085a80405744d3a3489dfa0d5433eb8b9ec64c4a58f6bd6ada174c03ed
+  sha256: 19a452ec44df133fdd321bcca791c9d049be69fef901716f02574acf8d602a6c
 
 
 build:
   number: 0
   skip: true  # [py2k]
-
-
-  missing_dso_whitelist:
-    - C: /Windows/System32/MSVCP140.dll  # [win]
-    - C: /Windows/System32/VCRUNTIME140.dll  # [win]
-    - C: /Windows/System32/imagehlp.dll  # [win]
-    - C: /Windows/System32/GLU32.dll  # [win]
-    - C: /Windows/System32/OPENGL32.dll  # [win]
-    - C: /Windows/System32/dwmapi.dll  # [win]
-    - C: /Windows/System32/WTSAPI32.dll  # [win]
-    - Library/bin/MSVCP140.dll              # [win]
-    - Library/bin/VCRUNTIME140.dll          # [win]
 
 
 requirements:
@@ -76,8 +65,9 @@ test:
     - resample
     - table
 
+
 about:
-  home: https://www.pcraster.eu
+  home: http://www.pcraster.eu
   license: GPL-3.0-only
   license_file: LICENSE
   summary: Environmental modelling software.
@@ -98,3 +88,4 @@ about:
 extra:
   recipe-maintainers:
     - OliverSchmitz
+    - kordejong
