@@ -1,7 +1,7 @@
 About pcraster
 ==============
 
-Home: https://www.pcraster.eu
+Home: http://www.pcraster.eu
 
 Package license: GPL-3.0-only
 
@@ -227,4 +227,5 @@ Feedstock Maintainers
 =====================
 
 * [@OliverSchmitz](https://github.com/OliverSchmitz/)
+* [@kordejong](https://github.com/kordejong/)
 
