@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: 2609922c00cafaa6a980f3b7b57ef68590c4670914a1701cbfb2cdf8c3cac5db
+  sha256: 358839da0c143aae04177805b602db2b230684a084768f876d7a94043fd49d37
 
 
 build:
