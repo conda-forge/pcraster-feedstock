@@ -1,4 +1,4 @@
-{% set version = "4.3.2" %}
+{% set version = "4.3.3" %}
 
 package:
   name: pcraster
@@ -7,11 +7,11 @@ package:
 
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: 3ac7d3186f4ba876a5a8e8d8bf10b109bdc7b5b33d84d26bab0948f29deac2a7
+  sha256: 17904dbd0e5d9b6b0e27358779c6b05c219bcb41d9b7691a238e8db357f69ed5
 
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py2k]
 
 
