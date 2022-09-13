@@ -7,11 +7,11 @@ package:
 
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: 17904dbd0e5d9b6b0e27358779c6b05c219bcb41d9b7691a238e8db357f69ed5
+  sha256: 3cbda5c3b3c1f8619945687b7319bf7e18058f600ad2f1d91a35dba3f0c5f92c
 
 
 build:
-  number: 2
+  number: 3
   skip: true  # [py2k]
 
 
@@ -81,7 +81,7 @@ about:
     and data assimilation (Ensemble Kalman Filter and Particle Filter). The
     Aguila tool allows for the interactive visualisation of stochastic spatio-
     temporal data.
-  doc_url: https://pcraster.geo.uu.nl/support/documentation/
+  doc_url: https://pcraster.geo.uu.nl/pcraster/latest/documentation/index.html
   dev_url: https://github.com/pcraster/pcraster
 
 
