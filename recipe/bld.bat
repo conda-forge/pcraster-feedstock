@@ -24,8 +24,7 @@ cmake .. -G"Ninja" ^
 -D PYTHON_EXECUTABLE="%PYTHON%" ^
 -D Python3_ROOT_DIR="%PREFIX%" ^
 -D PCRASTER_BUILD_TEST=OFF ^
--D PCRASTER_PYTHON_INSTALL_DIR="%SP_DIR%" ^
--D CMAKE_TOOLCHAIN_FILE=..\environment\cmake\msvs2017.cmake
+-D PCRASTER_PYTHON_INSTALL_DIR="%SP_DIR%"
 
 if errorlevel 1 exit 1
 
