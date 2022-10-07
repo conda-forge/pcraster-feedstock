@@ -15,8 +15,6 @@ numpy:
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
-  libgdal:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
