@@ -21,17 +21,15 @@ macos_machine:
 ncurses:
 - '6'
 numpy:
-- '1.19'
+- '1.20'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
-  libgdal:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.9.* *_cpython
 qt_main:
 - '5.15'
 target_platform:
