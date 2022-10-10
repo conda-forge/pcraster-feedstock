@@ -18,7 +18,7 @@ cd $SRC_DIR
 
 mkdir -p build && cd build
 
-cmake .. -G"Ninja" -DCMAKE_BUILD_TYPE=Release \
+cmake ${CMAKE_ARGS} .. -G"Ninja" -DCMAKE_BUILD_TYPE=Release \
   -D CMAKE_INSTALL_PREFIX="${PREFIX}" \
   -D Python3_FIND_STRATEGY="LOCATION" \
   -D Python3_EXECUTABLE="${PYTHON}" \
