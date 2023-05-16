@@ -7,11 +7,11 @@ package:
 
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: 55e7eff211a6777c0703157b03f33dc09a0bd0f509046ca4c508df0aadf76a0e
+  sha256: e02e93480e37fae743ca5228f3cf32c00e7bba77a8c3d6c8e768ff0fcc3117e3
 
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win and py==37]
 
 

@@ -3,5 +3,5 @@ __migrator:
   kind: version
   migration_number: 1
 libgdal:
-- '3.6'
-migrator_ts: 1668608830.3535678
+- '3.7'
+migrator_ts: 1684015875.9324048
