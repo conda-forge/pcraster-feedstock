@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and py==37]
 
 
@@ -33,7 +33,7 @@ requirements:
 
   host:
     - xorg-libxfixes                        # [linux]
-    - boost-cpp
+    - libboost-headers
     - xerces-c
     - qt-main
     - ncurses                               # [not win]
