@@ -7,12 +7,11 @@ package:
 
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: 8b4bb5843beb6639a95a928bc6ee41452a095f4844a4182689367fdfa40d0498
+  sha256: 441009c18fe3478d64af780212219c97543f4c8321ec37a988036ef2105b4190
 
 
 build:
-  number: 0
-  skip: true  # [win and py==37]
+  number: 1
 
 
 requirements:
@@ -33,7 +32,7 @@ requirements:
 
   host:
     - xorg-libxfixes                        # [linux]
-    - boost-cpp
+    - libboost-devel
     - xerces-c
     - qt-main
     - ncurses                               # [not win]
