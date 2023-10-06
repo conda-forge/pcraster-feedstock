@@ -32,7 +32,7 @@ requirements:
 
   host:
     - xorg-libxfixes                        # [linux]
-    - libboost-headers
+    - libboost-devel
     - xerces-c
     - qt-main
     - ncurses                               # [not win]
