@@ -15,7 +15,7 @@ cxx_compiler_version:
 libboost_devel:
 - '1.82'
 libgdal:
-- '3.7'
+- '3.8'
 macos_machine:
 - arm64-apple-darwin20.0.0
 ncurses:
