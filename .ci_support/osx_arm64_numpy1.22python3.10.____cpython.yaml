@@ -19,7 +19,7 @@ cxx_compiler_version:
 libboost_devel:
 - '1.84'
 libgdal:
-- '3.8'
+- '3.9'
 macos_machine:
 - arm64-apple-darwin20.0.0
 ncurses:
@@ -41,7 +41,5 @@ xerces_c:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - c_stdlib_version
-  - MACOSX_DEPLOYMENT_TARGET
 - - python
   - numpy

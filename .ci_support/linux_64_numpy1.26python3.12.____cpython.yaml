@@ -21,7 +21,7 @@ docker_image:
 libboost_devel:
 - '1.84'
 libgdal:
-- '3.8'
+- '3.9'
 ncurses:
 - '6'
 numpy:
