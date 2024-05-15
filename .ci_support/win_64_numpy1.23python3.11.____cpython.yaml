@@ -11,7 +11,7 @@ cxx_compiler:
 libboost_devel:
 - '1.84'
 libgdal:
-- '3.8'
+- '3.9'
 numpy:
 - '1.23'
 pin_run_as_build:
