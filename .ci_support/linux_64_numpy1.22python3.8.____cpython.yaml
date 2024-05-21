@@ -9,7 +9,7 @@ c_stdlib_version:
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge
+- conda-forge/label/numpy_rc,conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -21,7 +21,7 @@ docker_image:
 libboost_devel:
 - '1.84'
 libgdal:
-- '3.9'
+- '3.8'
 ncurses:
 - '6'
 numpy:
