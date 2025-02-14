@@ -11,7 +11,10 @@ source:
 
 
 build:
-  number: 9
+  number: 10
+
+  ignore_run_exports_from:
+    - libboost-devel
 
 
 requirements:
@@ -22,17 +25,13 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - {{ cdt('mesa-libgl-devel') }}         # [linux]
-    - {{ cdt('mesa-dri-drivers') }}         # [linux]
-    - {{ cdt('libselinux') }}               # [linux]
-    - {{ cdt('libxdamage') }}               # [linux]
-    - {{ cdt('libxxf86vm') }}               # [linux]
-    - cmake >=3.15
+    - cmake
     - ninja
     - make                                  # [win]
 
   host:
     - xorg-libxfixes                        # [linux]
+    - libgl-devel                           # [linux]
     - libboost-devel
     - xerces-c
     - qt-main
@@ -45,6 +44,7 @@ requirements:
 
   run:
     - python
+    - {{ pin_compatible('numpy') }}
     - libgdal
     - ncurses                               # [not win]
     - vs2015_runtime                        # [win]
