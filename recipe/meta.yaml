@@ -39,6 +39,7 @@ requirements:
     - libgdal
     - python
     - numpy
+    - pybind11
     - vs2015_runtime                        # [win]
     - libglu                                # [linux]
 
