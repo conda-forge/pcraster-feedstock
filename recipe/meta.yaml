@@ -1,4 +1,4 @@
-{% set version = "4.4.1" %}
+{% set version = "4.4.2" %}
 
 package:
   name: pcraster
@@ -7,11 +7,11 @@ package:
 
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: 99edb3ada4e960fbb0d39b6cb4dee08b37983aa1412ab23ef74f0c4172fb80a7
+  sha256: 415f66c7e26a0abf8f1d25b461f6af0e9fe0e038fd3cee43becde0c538b18f02
 
 
 build:
-  number: 10
+  number: 0
 
   ignore_run_exports_from:
     - libboost-devel
@@ -39,6 +39,7 @@ requirements:
     - libgdal
     - python
     - numpy
+    - pybind11
     - vs2015_runtime                        # [win]
     - libglu                                # [linux]
 
