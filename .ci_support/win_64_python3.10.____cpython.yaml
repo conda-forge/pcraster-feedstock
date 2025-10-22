@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 libboost_devel:
-- '1.86'
+- '1.88'
 libgdal:
 - '3.11'
 numpy:
@@ -26,6 +26,3 @@ target_platform:
 - win-64
 xerces_c:
 - '3.2'
-zip_keys:
-- - python
-  - channel_sources
