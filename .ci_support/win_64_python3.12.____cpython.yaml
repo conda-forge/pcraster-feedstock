@@ -25,4 +25,4 @@ qt_main:
 target_platform:
 - win-64
 xerces_c:
-- '3.2'
+- '3.3'
