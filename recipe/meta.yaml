@@ -1,4 +1,4 @@
-{% set version = "4.4.2" %}
+{% set version = "4.4.3" %}
 
 package:
   name: pcraster
@@ -7,11 +7,11 @@ package:
 
 source:
   url: http://pcraster.geo.uu.nl/pcraster/packages/src/pcraster-{{ version }}.tar.bz2
-  sha256: 415f66c7e26a0abf8f1d25b461f6af0e9fe0e038fd3cee43becde0c538b18f02
+  sha256: 0c283d25b76c5dc4ca926261629d9cfd70dd9cbca8e0beadae022e1caa0d2bdd
 
 
 build:
-  number: 6
+  number: 0
 
   ignore_run_exports_from:
     - libboost-devel
